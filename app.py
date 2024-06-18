@@ -18,7 +18,7 @@ class Game:
         self.player_name = input("Type your character's name: ")
         self.player = Character(self.player_name)
         self.player_magic_points = 54.545
-        self.treasure_distance = random.randint(10, 99)
+        self.treasure_distance = random.randint(999, 5000)
         self.player_points = float(54)
         self.weapons = [Weapon("gun", 15), Weapon("sword", 25), Weapon("grenade", 45)]
         self.friendlies = [Character("Jonesy", "Walking", generate_random_element(self.weapons)),
